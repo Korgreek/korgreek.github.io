@@ -1,0 +1,478 @@
+*,
+*::after,
+*:before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 72px;
+}
+
+body {
+  /* background-color: #444; */
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-cat {
+  font-size: 30px;
+  color: white;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+nav .navbar-band {
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(233, 168, 48); /* Nowy kolor podświetlenia na najechanie */
+}
+
+.fa-bars {
+  color: white;
+}
+
+.home,
+.aboutus,
+.portfolio,
+.prices,
+.team,
+.achivements,
+.contact {
+  height: auto;
+}
+
+.aboutus {
+  background-color: black;
+}
+
+.portfolio {
+  background-color: red;
+}
+
+.prices {
+  background-color: rgb(233, 168, 48);
+}
+
+.team {
+  background-color: blueviolet;
+}
+
+.achivements {
+  background-color: grey;
+}
+
+.contact {
+  color: orange;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/worker-repairing-water-heater.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 2;
+}
+
+header .hero-shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  z-index: 5;
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/worker-repairing-water-heater.jpg");
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+  .aboutus-hero {
+    background-image: url("../img/wiesL.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  header .hero-text h1 {
+    font-size: 80px;
+  }
+  header .hero-text p {
+    font-size: 60px;
+  }
+  .phone-number {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 300px) {
+  .fa-cat {
+    font-size: 24px;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+a .btn-outline-light {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a .btn-outline-light:hover {
+  color: black;
+}
+
+.navbar {
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+  z-index: 7;
+}
+
+.navbar a {
+  color: white;
+}
+
+.color-blue {
+  color: rgb(233, 168, 48);
+}
+
+.hero-text p {
+  text-transform: none;
+}
+
+a .fa-chevron-down {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 40px;
+  background-color: rgb(233, 168, 48);
+}
+
+.aboutus {
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+  background-color: #fff;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.aboutus-hover {
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+.aboutus-hover:hover {
+  color: rgb(233, 168, 48);
+}
+
+h2 {
+  padding-top: 10px;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url("../img/2151029984.jpg");
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.aboutus-hero .aboutus-hero-item {
+  margin: 20px 0;
+}
+
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card .card-img-top {
+  height: 274px;
+}
+
+.first-offer,
+.second-offer,
+.third-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto;
+  width: 450px;
+}
+
+.first-offer p,
+.second-offer p,
+.third-offer p {
+  margin: 20px;
+}
+
+.product-first {
+  text-align: center;
+  border-bottom: 2px solid #818288;
+  padding: 10px 20px;
+}
+
+.fa-leaf {
+  padding: 0 20px;
+}
+
+.contact-hero {
+  position: relative;
+  background-image: url("../img/55771.jpg");
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+
+.contact-hero .contact-shadow {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.aboutus-hero-item a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+.aboutus-hero-item a:hover {
+  cursor: pointer;
+  color: rgb(233, 168, 48);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 25px;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+}
+/*# sourceMappingURL=Strona2.css.map */
+
+/* Galeria */
+
+.gallery-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: none;
+}
+
+.gallery img {
+  width: 150px; /* Set your desired width */
+  height: 200px; /* Maintain aspect ratio */
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.gallery-container{
+  background-color: none;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: rgb(233, 168, 48);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(243, 167, 27);
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+#cookie-banner p {
+  margin-bottom: 10px;
+}
+
+#cookie-banner button {
+  background-color: rgb(233, 168, 48);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#cookie-policy {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
