@@ -409,7 +409,7 @@ footer p {
   cursor: pointer;
 }
 
-.gallery-container{
+.gallery-container {
   background-color: none;
 }
 
@@ -421,14 +421,16 @@ form {
 label {
   display: block;
   margin-top: 10px;
+  color:rgb(233, 168, 48);
+  font-weight: bold;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 8px;
+  padding: 18px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
   box-sizing: border-box;
 }
 
@@ -476,3 +478,33 @@ input[type="submit"]:hover {
   padding: 20px;
   background-color: #f4f4f4;
 }
+/* @keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+div, form {
+  animation: myAnim;
+  animation-duration: 1s;
+} */
+label{
+  color:rgb(233, 168, 48);
+  font-weight: bold;
+}
+@media (max-width: 450px){
+  form{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px){
+  a.nav-link{
+    font-size: 12px;
+  }
+}
+  
