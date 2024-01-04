@@ -74,8 +74,14 @@
 
     <label for="message">Wiadomość:</label>
     <textarea id="message" name="message" rows="4" required></textarea>
+   
+    <div style="display: flex; align-items: center;">
+      <input type="checkbox" id="termsCheckbox" name="termsCheckbox" style="width: 40px! ; height: 40px; margin-right: 10px;">
+      <label for="termsCheckbox" style="font-weight: normal; color: black; text-align: justify;">
 
-    <input type="submit" value="Wyślij">
+        Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Administratorem danych osobowych jest VENTURA MARCIN JÓZEF OTTO - Niewodnica Korycka, Polska, NIP:6342599523</label>
+  </div>
+  <input type="submit" value="Wyślij" id="submitButton" disabled>
 </form>     
   </main>
 
@@ -135,6 +141,12 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById('termsCheckbox').addEventListener('change', function () {
+      var submitButton = document.getElementById('submitButton');
+      submitButton.disabled = !this.checked;
+  });
+</script>
 
 
 </body>

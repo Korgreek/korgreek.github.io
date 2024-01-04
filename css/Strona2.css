@@ -179,7 +179,10 @@ a .btn-outline-light:hover {
 .hero-text p {
   text-transform: none;
 }
-
+p.aboutus-hero-text{
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.9; 
+}
 a .fa-chevron-down {
   color: white;
   position: absolute;
@@ -508,3 +511,20 @@ label{
   }
 }
   
+input[type="termsCheckbox"] {
+  margin-left: 5%;
+  width: 50px;
+  height: 50px;
+}
+#submitButton:disabled {
+  background-color: #dddddd; 
+  color: #888888; 
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#submitButton:not(:disabled) {
+  background-color: #f09000; 
+  color: #ffffff; 
+  transition: background-color 0.5s ease, color 0.5s ease; /
+}
+
